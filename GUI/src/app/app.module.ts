@@ -13,6 +13,8 @@ import { StatusComponent } from './status/status.component';
 
 import { HttpClientModule } from '@angular/common/http';
 import { DatePipe } from '@angular/common';
+import { LoginComponent } from './login/login.component';
+import { UserComponent } from './user/user.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +23,8 @@ import { DatePipe } from '@angular/common';
     SuccessComponent,
     SearchComponent,
     StatusComponent,
+    LoginComponent,
+    UserComponent,
    
   ],
   imports: [
