@@ -1,0 +1,56 @@
+<mat-card class="Add-card">
+    <mat-card-header>
+     
+      <mat-card-title>Add Item</mat-card-title>
+      <mat-card-subtitle>Enter details to claim warranty</mat-card-subtitle>
+    </mat-card-header>
+ 
+    <mat-card-content>
+
+    
+
+        <mat-form-field>
+            <input matInput placeholder="Warrenty No" [formControl]="wNoFormControl">    
+        </mat-form-field>
+
+        <mat-form-field>
+            <input matInput placeholder="No of Warrenty Dates"[formControl]="noOfDays">    
+        </mat-form-field>
+
+        <mat-form-field>
+            <input matInput [matDatepicker]="picker" placeholder="Choose Inv Date"[formControl]="chooseInvDate">
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+
+        <mat-form-field>
+            <input matInput placeholder="Item Name"[formControl]="itemName">
+        </mat-form-field>
+
+        <mat-form-field>
+            <input matInput placeholder="Company"[formControl]="company">
+        </mat-form-field>
+        <mat-form-field>
+            <textarea matInput placeholder="Fault"[formControl]="fault"></textarea>
+          </mat-form-field>
+        
+        
+     
+        <mat-form-field>
+            <input matInput placeholder="Customer Name"[formControl]="cusName">
+           
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Contact"[formControl]="contact">
+           
+        </mat-form-field>
+        
+        
+        
+
+    </mat-card-content>
+
+    <mat-card-actions>
+        <button mat-raised-button color="primary">Submit</button>
+    </mat-card-actions>
+  </mat-card>
