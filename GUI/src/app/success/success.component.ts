@@ -31,6 +31,7 @@ export class SuccessComponent implements OnInit {
       this.itemID = params['itemID']
     });
 
+
     var request = "http://ec2-18-191-29-44.us-east-2.compute.amazonaws.com:8080/api/view?itemID="+this.itemID;
     this.http.get<Item[]>(request).subscribe(data=>{this.items=data;console.log(data)});
   }
