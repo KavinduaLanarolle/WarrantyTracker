@@ -2,21 +2,38 @@
   <mat-card class="Success-card">
     <mat-card-header>
      
-      <mat-card-title>Item On Hand </mat-card-title>
-      <mat-card-subtitle>Successfully aded to the database.</mat-card-subtitle>
+      <mat-card-title>Warranty Note</mat-card-title>
     </mat-card-header>
  
     <mat-card-content>
         <mat-list role="list">
             <mat-list>
 
-                <mat-list-item >
+                <mat-list-item *ngFor="let item of items">
             
-                  <h4 mat-line>Fol</h4>
-                  <p mat-line> Fddusf </p>
+                  <h1 mat-line>{{item.itemID}}</h1>
+                  <p mat-line>Warranty NO</p>
+
+                  <h1 mat-line>{{item.itemName}}</h1>
+                  <p mat-line>Item Name</p>
+
+                  <h1 mat-line>{{item.itemCompany}}</h1>
+                  <p mat-line>Company</p>
+
+                  <h1 mat-line>{{item.itemFault}}</h1>
+                  <p mat-line>Fault</p>
+
+                  <h1 mat-line>{{item.itemInvoiceDate}}</h1>
+                  <p mat-line>Invoice Date</p>
+
+                  <h1 mat-line>{{item.itemCustomer}}</h1>
+                  <p mat-line>Customer Name</p>
+
+                  <h1 mat-line>{{item.itemContact}}</h1>
+                  <p mat-line>Contact No</p>
+                
                 </mat-list-item>
-              
-               
+    
               </mat-list>
               
           </mat-list>

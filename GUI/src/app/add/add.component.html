@@ -14,7 +14,7 @@
         </mat-form-field>
 
         <mat-form-field>
-            <input matInput placeholder="No of Warrenty Dates"[formControl]="noOfDays">    
+            <input matInput placeholder="No of Warrenty Dates" [formControl]="noOfDays">    
         </mat-form-field>
 
         <mat-form-field>
@@ -51,6 +51,6 @@
     </mat-card-content>
 
     <mat-card-actions>
-        <button mat-raised-button color="primary">Submit</button>
+        <button mat-raised-button color="primary" (click)='addItem()'>Submit</button>
     </mat-card-actions>
   </mat-card>
